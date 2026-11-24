@@ -24,7 +24,7 @@ jobs:
           cache: maven
           cache-dependency-path: backend/pom.xml
       - name: Unit tests, API contracts, and package
-        run: bash backend/mvnw -B -f backend/pom.xml verify
+        run: mvn -B -f backend/pom.xml verify
       - name: Publish test summary
         if: always()
         shell: bash
