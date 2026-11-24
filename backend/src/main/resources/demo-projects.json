@@ -1,0 +1,82 @@
+{
+  "orbitflow": {
+    "name": "OrbitFlow",
+    "description": "Подключение к платформе рабочих процессов: продукт, сервисы, среда и первый вклад.",
+    "docs": {
+      "overview.md": [
+        "OrbitFlow: продукт и рабочие сценарии",
+        "Контекст",
+        [
+          "07_product/orbitflow-overview.md",
+          "07_product/workflow-lifecycle.md"
+        ]
+      ],
+      "architecture.md": [
+        "OrbitFlow: архитектура, сервисы и ответственные",
+        "Контекст",
+        [
+          "04_engineering/service-catalog.md",
+          "04_engineering/engineering-overview.md"
+        ]
+      ],
+      "environment.md": [
+        "OrbitFlow: окружение, доступы и запуск",
+        "Окружение",
+        [
+          "04_engineering/local-development.md",
+          "02_it_support/github-access.md",
+          "05_qa/qa-onboarding.md",
+          "06_devops/environments.md"
+        ]
+      ],
+      "delivery.md": [
+        "OrbitFlow: первая задача, PR и review",
+        "Рабочий процесс",
+        [
+          "12_process/first-contribution.md",
+          "04_engineering/pull-request.md",
+          "12_process/definition-of-done.md"
+        ]
+      ]
+    }
+  },
+  "beacon": {
+    "name": "Beacon Observability",
+    "description": "Подключение к направлению наблюдаемости: сигналы, окружения, runbooks и безопасные изменения.",
+    "docs": {
+      "overview.md": [
+        "Beacon: назначение и сигналы мониторинга",
+        "Контекст",
+        [
+          "06_devops/monitoring.md"
+        ]
+      ],
+      "architecture.md": [
+        "Beacon: навигация по сервисам и ответственным",
+        "Контекст",
+        [
+          "06_devops/monitoring.md",
+          "06_devops/oncall.md"
+        ]
+      ],
+      "environment.md": [
+        "Beacon: окружения и безопасный доступ",
+        "Окружение",
+        [
+          "06_devops/environments.md",
+          "06_devops/docker-basics.md",
+          "03_security/least-privilege.md"
+        ]
+      ],
+      "delivery.md": [
+        "Beacon: первая задача и согласование изменений",
+        "Рабочий процесс",
+        [
+          "06_devops/oncall.md",
+          "06_devops/rollback.md",
+          "12_process/definition-of-done.md"
+        ]
+      ]
+    }
+  }
+}

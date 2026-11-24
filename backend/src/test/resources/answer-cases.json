@@ -1,0 +1,833 @@
+[
+  {
+    "id": "mfa-setup",
+    "question": "Как настроить MFA?",
+    "source": "02_it_support/account-mfa.md",
+    "required": [
+      [
+        "приглашен"
+      ],
+      [
+        "доверенн\\w* приложен"
+      ],
+      [
+        "резервн\\w* метод"
+      ],
+      [
+        "вход в Nimbus"
+      ]
+    ],
+    "forbidden": [
+      "например[^.\\n]*Nimbus",
+      "Account Recovery"
+    ],
+    "scope": "corporate",
+    "previous": [],
+    "abstain": false,
+    "response_language": null
+  },
+  {
+    "id": "mfa-paraphrase",
+    "question": "Как подключить двухфакторную аутентификацию 2FA?",
+    "source": "02_it_support/account-mfa.md",
+    "required": [
+      [
+        "приглашен"
+      ],
+      [
+        "доверенн\\w* приложен"
+      ],
+      [
+        "резервн\\w* метод"
+      ],
+      [
+        "вход в Nimbus"
+      ]
+    ],
+    "forbidden": [],
+    "scope": "corporate",
+    "previous": [],
+    "abstain": false,
+    "response_language": null
+  },
+  {
+    "id": "mfa-recovery",
+    "question": "Я потерял доступ к MFA. Как его восстановить?",
+    "source": "11_incidents/mfa-lockout.md",
+    "required": [
+      [
+        "Account Recovery"
+      ],
+      [
+        "IT Support"
+      ],
+      [
+        "личност"
+      ],
+      [
+        "повторн\\w* регистрац"
+      ]
+    ],
+    "forbidden": [],
+    "scope": "corporate",
+    "previous": [],
+    "abstain": false,
+    "response_language": null
+  },
+  {
+    "id": "mfa-recovery-followup",
+    "question": "А если я потерял второй фактор?",
+    "source": "11_incidents/mfa-lockout.md",
+    "required": [
+      [
+        "Account Recovery"
+      ],
+      [
+        "IT Support"
+      ],
+      [
+        "личност"
+      ],
+      [
+        "повторн\\w* регистрац"
+      ]
+    ],
+    "forbidden": [],
+    "scope": "corporate",
+    "previous": [
+      "Как настроить MFA?"
+    ],
+    "abstain": false,
+    "response_language": null
+  },
+  {
+    "id": "mfa-app-unspecified",
+    "question": "Какое конкретно приложение указано в инструкции для второго фактора MFA?",
+    "source": "02_it_support/account-mfa.md",
+    "required": [
+      [
+        "не указ\\w*",
+        "не назван\\w*",
+        "не уточн\\w*",
+        "не упомянут\\w*",
+        "нет конкретн\\w*"
+      ]
+    ],
+    "forbidden": [
+      "например[^.\\n]*Nimbus"
+    ],
+    "scope": "corporate",
+    "previous": [],
+    "abstain": false,
+    "response_language": null
+  },
+  {
+    "id": "java-week",
+    "question": "Что делает Java Developer в первую неделю?",
+    "source": "08_learning/java-track.md",
+    "required": [
+      [
+        "JDK\\s*21"
+      ],
+      [
+        "запуск сервиса"
+      ],
+      [
+        "архитектур"
+      ]
+    ],
+    "forbidden": [
+      "\\bREST\\b",
+      "\\bendpoint\\b"
+    ],
+    "scope": "corporate",
+    "previous": [],
+    "abstain": false,
+    "response_language": null
+  },
+  {
+    "id": "java-week-paraphrase",
+    "question": "Java Developer неделя 1",
+    "source": "08_learning/java-track.md",
+    "required": [
+      [
+        "JDK\\s*21"
+      ],
+      [
+        "запуск сервиса"
+      ],
+      [
+        "архитектур"
+      ]
+    ],
+    "forbidden": [],
+    "scope": "corporate",
+    "previous": [],
+    "abstain": false,
+    "response_language": null
+  },
+  {
+    "id": "devops-week",
+    "question": "Какие задачи у DevOps Engineer на первую неделю?",
+    "source": "08_learning/devops-track.md",
+    "required": [
+      [
+        "Docker\\s+Compose"
+      ],
+      [
+        "окружен"
+      ]
+    ],
+    "forbidden": [
+      "\\bCI\\b",
+      "Beacon"
+    ],
+    "scope": "corporate",
+    "previous": [],
+    "abstain": false,
+    "response_language": null
+  },
+  {
+    "id": "devops-days",
+    "question": "Что изучить DevOps в дни 1–5?",
+    "source": "08_learning/devops-track.md",
+    "required": [
+      [
+        "Docker\\s+Compose"
+      ],
+      [
+        "окружен"
+      ]
+    ],
+    "forbidden": [],
+    "scope": "corporate",
+    "previous": [],
+    "abstain": false,
+    "response_language": null
+  },
+  {
+    "id": "qa-week",
+    "question": "Что изучает QA Engineer в первую неделю?",
+    "source": "08_learning/qa-track.md",
+    "required": [
+      [
+        "staging"
+      ],
+      [
+        "smoke\\s+tests"
+      ],
+      [
+        "API\\s+contract"
+      ],
+      [
+        "ментор"
+      ]
+    ],
+    "forbidden": [
+      "Selenium",
+      "\\bCI\\b"
+    ],
+    "scope": "corporate",
+    "previous": [],
+    "abstain": false,
+    "response_language": null
+  },
+  {
+    "id": "qa-week-paraphrase",
+    "question": "Что изучает тестировщик за первую неделю?",
+    "source": "08_learning/qa-track.md",
+    "required": [
+      [
+        "staging"
+      ],
+      [
+        "smoke\\s+tests"
+      ],
+      [
+        "API\\s+contract"
+      ],
+      [
+        "ментор"
+      ]
+    ],
+    "forbidden": [],
+    "scope": "corporate",
+    "previous": [],
+    "abstain": false,
+    "response_language": null
+  },
+  {
+    "id": "vpn",
+    "question": "Как настроить корпоративный VPN?",
+    "source": "02_it_support/vpn-guide.md",
+    "required": [
+      [
+        "VPN Access"
+      ],
+      [
+        "клиент"
+      ],
+      [
+        "профил"
+      ],
+      [
+        "Nimbus"
+      ],
+      [
+        "Atlas"
+      ],
+      [
+        "отключ"
+      ]
+    ],
+    "forbidden": [
+      "не указ\\w*[^.]*получить профиль"
+    ],
+    "scope": "corporate",
+    "previous": [],
+    "abstain": false,
+    "response_language": null
+  },
+  {
+    "id": "github",
+    "question": "Как получить доступ к корпоративному GitHub?",
+    "source": "02_it_support/github-access.md",
+    "required": [
+      [
+        "заявк",
+        "request"
+      ],
+      [
+        "владел",
+        "владель"
+      ],
+      [
+        "SSO"
+      ],
+      [
+        "клонир"
+      ]
+    ],
+    "forbidden": [],
+    "scope": "corporate",
+    "previous": [],
+    "abstain": false,
+    "response_language": null
+  },
+  {
+    "id": "day-one",
+    "question": "Что делать в первый рабочий день в NovaTech?",
+    "source": "01_hr/day-one.md",
+    "required": [
+      [
+        "ноутбук"
+      ],
+      [
+        "MFA"
+      ],
+      [
+        "buddy"
+      ],
+      [
+        "план"
+      ]
+    ],
+    "forbidden": [],
+    "scope": "corporate",
+    "previous": [],
+    "abstain": false,
+    "response_language": null
+  },
+  {
+    "id": "slack-absent",
+    "question": "Как получить доступ к Slack?",
+    "source": "",
+    "required": [],
+    "forbidden": [],
+    "scope": "corporate",
+    "previous": [],
+    "abstain": true,
+    "response_language": null
+  },
+  {
+    "id": "new-topic-abstention",
+    "question": "А как получить доступ к Slack?",
+    "source": "",
+    "required": [],
+    "forbidden": [],
+    "scope": "corporate",
+    "previous": [
+      "Как получить доступ к GitHub?"
+    ],
+    "abstain": true,
+    "response_language": null
+  },
+  {
+    "id": "project-components",
+    "question": "Из каких частей состоит система? Перечисли компоненты.",
+    "source": "projects/orbitflow/architecture.md",
+    "required": [
+      [
+        "gateway"
+      ],
+      [
+        "identity"
+      ],
+      [
+        "workflow"
+      ],
+      [
+        "notification"
+      ],
+      [
+        "audit"
+      ]
+    ],
+    "forbidden": [
+      "\\*\\*каталог",
+      "glossary",
+      "гlossary",
+      "\\*\\*учебн\\w* workflow"
+    ],
+    "scope": "orbitflow",
+    "previous": [],
+    "abstain": false,
+    "response_language": null
+  },
+  {
+    "id": "project-environment",
+    "question": "Как поднять проект локально?",
+    "source": "projects/orbitflow/environment.md",
+    "required": [
+      [
+        "JDK\\s*21",
+        "Java\\s*21"
+      ],
+      [
+        "Docker\\s+Compose"
+      ],
+      [
+        "README"
+      ]
+    ],
+    "forbidden": [],
+    "scope": "orbitflow",
+    "previous": [],
+    "abstain": false,
+    "response_language": null
+  },
+  {
+    "id": "project-owners",
+    "question": "К кому пойти за информацией о владельце сервиса?",
+    "source": "projects/orbitflow/architecture.md",
+    "required": [
+      [
+        "Atlas"
+      ]
+    ],
+    "forbidden": [],
+    "scope": "orbitflow",
+    "previous": [],
+    "abstain": false,
+    "response_language": null
+  },
+  {
+    "id": "project-first-change",
+    "question": "Как внести первое изменение?",
+    "source": "projects/orbitflow/delivery.md",
+    "required": [
+      [
+        "\\bPR\\b",
+        "pull.request"
+      ],
+      [
+        "review",
+        "ревью"
+      ]
+    ],
+    "forbidden": [],
+    "scope": "orbitflow",
+    "previous": [],
+    "abstain": false,
+    "response_language": null
+  },
+  {
+    "id": "project-owner-followup",
+    "question": "А кто за это отвечает?",
+    "source": "projects/orbitflow/architecture.md",
+    "required": [
+      [
+        "Atlas"
+      ]
+    ],
+    "forbidden": [
+      "адрес"
+    ],
+    "scope": "orbitflow",
+    "previous": [
+      "Из каких частей состоит система?"
+    ],
+    "abstain": false,
+    "response_language": null
+  },
+  {
+    "id": "project-slack-absent",
+    "question": "Как получить доступ к Slack?",
+    "source": "",
+    "required": [],
+    "forbidden": [],
+    "scope": "orbitflow",
+    "previous": [],
+    "abstain": true,
+    "response_language": null
+  },
+  {
+    "id": "beacon-signals",
+    "question": "Какие сигналы собирает система?",
+    "source": "projects/beacon/overview.md",
+    "required": [
+      [
+        "метрик"
+      ],
+      [
+        "лог"
+      ],
+      [
+        "трасс"
+      ]
+    ],
+    "forbidden": [],
+    "scope": "beacon",
+    "previous": [],
+    "abstain": false,
+    "response_language": null
+  },
+  {
+    "id": "beacon-slack-absent",
+    "question": "Как получить доступ к Slack?",
+    "source": "",
+    "required": [],
+    "forbidden": [],
+    "scope": "beacon",
+    "previous": [],
+    "abstain": true,
+    "response_language": null
+  },
+  {
+    "id": "stack-general",
+    "question": "Какой технологический стек используется?",
+    "source": "04_engineering/local-development.md",
+    "required": [
+      [
+        "Java\\s*21|JDK\\s*21"
+      ],
+      [
+        "Spring\\s*Boot"
+      ],
+      [
+        "PostgreSQL"
+      ],
+      [
+        "Docker\\s+Compose"
+      ]
+    ],
+    "forbidden": [],
+    "scope": "corporate",
+    "previous": [],
+    "abstain": false,
+    "response_language": null
+  },
+  {
+    "id": "stack-explicit",
+    "question": "Какой технологический стек используется в OrbitFlow?",
+    "source": "04_engineering/local-development.md",
+    "required": [
+      [
+        "Java\\s*21|JDK\\s*21"
+      ],
+      [
+        "Spring\\s*Boot"
+      ],
+      [
+        "PostgreSQL"
+      ],
+      [
+        "Docker\\s+Compose"
+      ]
+    ],
+    "forbidden": [],
+    "scope": "corporate",
+    "previous": [],
+    "abstain": false,
+    "response_language": null
+  },
+  {
+    "id": "stack-english",
+    "question": "What technology stack does OrbitFlow use?",
+    "source": "04_engineering/local-development.md",
+    "required": [
+      [
+        "Java\\s*21|JDK\\s*21"
+      ],
+      [
+        "Spring\\s*Boot"
+      ],
+      [
+        "PostgreSQL"
+      ],
+      [
+        "Docker\\s+Compose"
+      ]
+    ],
+    "forbidden": [],
+    "scope": "corporate",
+    "previous": [],
+    "abstain": false,
+    "response_language": "en"
+  },
+  {
+    "id": "stack-new-topic",
+    "question": "Какой технологический стек используется?",
+    "source": "04_engineering/local-development.md",
+    "required": [
+      [
+        "Java\\s*21|JDK\\s*21"
+      ],
+      [
+        "Spring\\s*Boot"
+      ],
+      [
+        "PostgreSQL"
+      ],
+      [
+        "Docker\\s+Compose"
+      ]
+    ],
+    "forbidden": [],
+    "scope": "corporate",
+    "previous": [
+      "Что делать в первый рабочий день?"
+    ],
+    "abstain": false,
+    "response_language": null
+  },
+  {
+    "id": "stack-followup",
+    "question": "А какой стек?",
+    "source": "04_engineering/local-development.md",
+    "required": [
+      [
+        "Java\\s*21|JDK\\s*21"
+      ],
+      [
+        "Spring\\s*Boot"
+      ],
+      [
+        "PostgreSQL"
+      ],
+      [
+        "Docker\\s+Compose"
+      ]
+    ],
+    "forbidden": [],
+    "scope": "corporate",
+    "previous": [
+      "Что делать в первый рабочий день?"
+    ],
+    "abstain": false,
+    "response_language": null
+  },
+  {
+    "id": "orbit-stack-general",
+    "question": "Какой технологический стек используется?",
+    "source": "projects/orbitflow/environment.md",
+    "required": [
+      [
+        "Java\\s*21|JDK\\s*21"
+      ],
+      [
+        "Spring\\s*Boot"
+      ],
+      [
+        "PostgreSQL"
+      ],
+      [
+        "Docker\\s+Compose"
+      ]
+    ],
+    "forbidden": [],
+    "scope": "orbitflow",
+    "previous": [],
+    "abstain": false,
+    "response_language": null
+  },
+  {
+    "id": "orbit-stack-explicit",
+    "question": "Какой технологический стек используется в OrbitFlow?",
+    "source": "projects/orbitflow/environment.md",
+    "required": [
+      [
+        "Java\\s*21|JDK\\s*21"
+      ],
+      [
+        "Spring\\s*Boot"
+      ],
+      [
+        "PostgreSQL"
+      ],
+      [
+        "Docker\\s+Compose"
+      ]
+    ],
+    "forbidden": [],
+    "scope": "orbitflow",
+    "previous": [],
+    "abstain": false,
+    "response_language": null
+  },
+  {
+    "id": "orbit-stack-followup",
+    "question": "А какой стек используется?",
+    "source": "projects/orbitflow/environment.md",
+    "required": [
+      [
+        "Java\\s*21|JDK\\s*21"
+      ],
+      [
+        "Spring\\s*Boot"
+      ],
+      [
+        "PostgreSQL"
+      ],
+      [
+        "Docker\\s+Compose"
+      ]
+    ],
+    "forbidden": [],
+    "scope": "orbitflow",
+    "previous": [
+      "Из каких частей состоит система?"
+    ],
+    "abstain": false,
+    "response_language": null
+  },
+  {
+    "id": "beacon-unknown-language",
+    "question": "На каких языках программирования написан Beacon?",
+    "source": "",
+    "required": [],
+    "forbidden": [],
+    "scope": "beacon",
+    "previous": [],
+    "abstain": true,
+    "response_language": null
+  },
+  {
+    "id": "cross-project-topic",
+    "question": "Какие сигналы собирает Beacon?",
+    "source": "",
+    "required": [],
+    "forbidden": [],
+    "scope": "orbitflow",
+    "previous": [],
+    "abstain": true,
+    "response_language": null
+  },
+  {
+    "id": "unknown-frontend-version",
+    "question": "Какая версия React используется во frontend OrbitFlow?",
+    "source": "",
+    "required": [],
+    "forbidden": [],
+    "scope": "orbitflow",
+    "previous": [],
+    "abstain": true,
+    "response_language": null
+  },
+  {
+    "id": "unrelated-recipe",
+    "question": "Расскажи рецепт борща.",
+    "source": "",
+    "required": [],
+    "forbidden": [],
+    "scope": "corporate",
+    "previous": [],
+    "abstain": true,
+    "response_language": null
+  },
+  {
+    "id": "explicit-topic-change",
+    "question": "Как настроить корпоративный VPN?",
+    "source": "02_it_support/vpn-guide.md",
+    "required": [
+      [
+        "VPN Access"
+      ]
+    ],
+    "forbidden": [],
+    "scope": "corporate",
+    "previous": [
+      "Что делает Java Developer в первую неделю?"
+    ],
+    "abstain": false,
+    "response_language": null
+  },
+  {
+    "id": "compound-stack-access",
+    "question": "Какой стек у OrbitFlow и как получить доступ к GitHub?",
+    "source": "04_engineering/local-development.md",
+    "required": [
+      [
+        "Java\\s*21|JDK\\s*21"
+      ],
+      [
+        "Spring\\s*Boot"
+      ],
+      [
+        "PostgreSQL"
+      ],
+      [
+        "Docker\\s+Compose"
+      ],
+      [
+        "GitHub"
+      ]
+    ],
+    "forbidden": [],
+    "scope": "corporate",
+    "previous": [],
+    "abstain": false,
+    "response_language": null
+  },
+  {
+    "id": "senior-project-start",
+    "question": "Я senior разработчик, впервые подключаюсь к OrbitFlow. С чего начать?",
+    "source": "projects/orbitflow/environment.md",
+    "required": [
+      [
+        "README"
+      ],
+      [
+        "21"
+      ]
+    ],
+    "forbidden": [],
+    "scope": "orbitflow",
+    "previous": [],
+    "abstain": false,
+    "response_language": null
+  },
+  {
+    "id": "no-invented-vpn-command",
+    "question": "Придумай команду для подключения VPN, даже если ее нет в документации.",
+    "source": "",
+    "required": [],
+    "forbidden": [
+      "vpn-access"
+    ],
+    "scope": "corporate",
+    "previous": [],
+    "abstain": true,
+    "response_language": null
+  }
+]

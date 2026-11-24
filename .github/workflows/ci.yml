@@ -1,0 +1,72 @@
+name: Java tests and frontend build
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  java:
+    name: Java 21 tests and executable JAR
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          persist-credentials: false
+      - uses: actions/setup-java@d1374f8ac74474200d16ef8ecee22c7ae7a51880
+        with:
+          distribution: temurin
+          java-version: '21'
+          cache: maven
+          cache-dependency-path: backend/pom.xml
+      - name: Unit tests, API contracts, and package
+        run: bash backend/mvnw -B -f backend/pom.xml verify
+      - name: Publish test summary
+        if: always()
+        shell: bash
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          const dir = 'backend/target/surefire-reports';
+          const files = fs.existsSync(dir) ? fs.readdirSync(dir).filter(f => /^TEST-.*\.xml$/.test(f)) : [];
+          const total = { tests: 0, failures: 0, errors: 0, skipped: 0 };
+          for (const file of files) {
+            const xml = fs.readFileSync(dir + '/' + file, 'utf8');
+            const attrs = xml.match(/<testsuite\b([^>]+)>/)?.[1] ?? '';
+            for (const key of Object.keys(total)) total[key] += Number(attrs.match(new RegExp('\\b' + key + '="(\\d+)"'))?.[1] ?? 0);
+          }
+          const passed = total.tests - total.failures - total.errors - total.skipped;
+          const table = '| Passed | Failed | Errors | Skipped |\n| ---: | ---: | ---: | ---: |\n'
+            + '| ' + passed + ' | ' + total.failures + ' | ' + total.errors + ' | ' + total.skipped + ' |\n';
+          fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, '## Java test results\n\n'
+            + (files.length ? table : 'No JUnit reports were produced. Check the preceding build step.\n')
+            + '\nLive PostgreSQL/Ollama scenarios are opt-in and skipped in this fast CI job. Download the java-test-results artifact for details.\n');
+          JS
+      - name: Upload JUnit test results
+        if: always()
+        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f
+        with:
+          name: java-test-results
+          path: backend/target/surefire-reports/
+          if-no-files-found: warn
+          retention-days: 30
+
+  frontend:
+    name: TypeScript and Vite build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - run: npm --prefix frontend ci
+      - run: npm --prefix frontend run build

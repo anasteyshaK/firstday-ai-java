@@ -1,0 +1,23 @@
+name: Bug report
+description: Report a reproducible application or answer-quality issue.
+title: "[Bug]: "
+body:
+  - type: textarea
+    id: behavior
+    attributes:
+      label: What happened?
+      description: Include the active journey and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Use synthetic data. Never paste tokens, passwords, or private conversations.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Environment and evidence
+      description: Java version, operating system, model name, relevant sources, and sanitized logs.

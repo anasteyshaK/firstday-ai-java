@@ -1,0 +1,72 @@
+@font-face{font-family:Manrope;src:url('/assets/fonts/Manrope-Variable.ttf') format('truetype');font-style:normal;font-weight:200 800;font-display:swap}
+.fd-reference-shell{--fd-ink:#10192c;--fd-muted:#65708b;--fd-lime:#d2fa43;--fd-line:#e0e3eb;font-family:Manrope,'Segoe UI',sans-serif;min-height:100dvh}
+.fd-reference-shell .app-frame{max-width:none;min-height:100dvh;box-shadow:none}
+.fd-reference-shell .ambient{display:none}
+.fd-reference-shell .sidebar{width:222px;height:100dvh;position:sticky;top:0;align-self:flex-start;padding:27px 15px 24px;background:#0c1422 url('/assets/dashboard/sidebar-mountains.png') center top/100% 105% no-repeat;border-right:1px solid #263242;color:#eef2fc;z-index:30;isolation:isolate}
+.fd-reference-shell .sidebar:before{content:'';position:absolute;inset:0;background:#07101e26;z-index:-1}
+.fd-reference-shell .sidebar-top{padding:0 12px 41px}
+.fd-nova-brand{display:flex;align-items:center;gap:12px;color:#f5f6fa;white-space:nowrap}
+.fd-nova-brand img{width:49px;height:35px;object-fit:contain;mix-blend-mode:screen}
+.fd-nova-brand strong{font-size:18px;font-weight:700;letter-spacing:-.6px;display:block;line-height:1.3}
+.fd-nova-brand small{font-size:12px;font-weight:400;display:block;color:#d3d9e6;line-height:1.5}
+.fd-reference-shell .nav{gap:6px}
+.fd-reference-shell .nav-item{height:47px;padding:0 16px;gap:18px;border-radius:13px;font-size:13px;letter-spacing:0;font-weight:500;border:1px solid transparent;color:#edf1fa;box-shadow:none;transition:background .2s,border-color .2s,transform .2s}
+.fd-reference-shell .nav-item>svg{width:23px;height:23px;flex-shrink:0;filter:none}
+.fd-reference-shell .nav-item:hover{background:#26344b90}
+.fd-reference-shell .nav-item:active{transform:translateY(1px)}
+.fd-reference-shell .nav-item.active{background:#24324ad4;border-color:#adbe7e60;box-shadow:inset 1px 0 1px #e6ff9b80,inset 0 1px 0 #e1f7b02b;color:#fff}
+.fd-reference-shell .nav-item.active>svg{color:#d4f76f}
+.fd-reference-shell .nav-item.active:first-child>svg{fill:#d4f76f;stroke-width:1.1}
+.fd-nav-active-dot{width:6px;height:6px;position:absolute;right:12px;top:9px;border-radius:50%;background:#c9f83d;box-shadow:12px -9px 0 -1px #d6ff55}
+.fd-sidebar-quote{margin:auto 16px 0;padding-top:30px;padding-bottom:112px}
+.fd-sidebar-quote p{font-size:16px;line-height:1.42;font-weight:400;color:#aab2c2;margin:0 0 23px;letter-spacing:-.3px}
+.fd-sidebar-quote>span{display:block;width:32px;height:1px;background:#ddf68a;position:relative}
+.fd-sidebar-quote>span:before{content:'';position:absolute;left:3px;top:-2px;width:4px;height:5px;border-radius:1px;background:#d7ff52}
+.fd-sidebar-status{display:flex;align-items:center;gap:5px;white-space:nowrap;font-size:9px;color:#d4dce9;padding-left:17px;margin-top:12px}
+.fd-sidebar-status>i{width:6px;height:6px;border-radius:50%;background:#d4f74d;box-shadow:0 0 0 5px #8ba8c226;margin-right:5px}
+.fd-sidebar-status>span{color:#aebad0}
+.fd-sidebar-status>svg{color:#6e8aa8;margin-left:auto;margin-right:12px;height:24px}
+.fd-reference-shell .topbar{height:74px;padding:0 34px 0 32px;background:#f6f6f7;border-bottom:1px solid #e1e4eb;color:var(--fd-ink);gap:20px}
+.fd-topbar-left{display:flex;align-items:center;gap:20px;min-width:0}
+.fd-onboarding-badge{height:29px;display:inline-flex;align-items:center;gap:9px;border:1px solid #d9dce5;border-radius:20px;font-size:9px;font-weight:800;letter-spacing:.2px;padding:0 13px;white-space:nowrap;background:#f1f2f5}
+.fd-onboarding-badge>i{width:8px;height:8px;background:#c5f448;border-radius:50%}
+.fd-topbar-divider{height:25px;width:1px;background:#dce0e7}
+.fd-reference-shell .topbar-breadcrumb{display:flex;align-items:center;gap:16px;font-size:12px;font-weight:500;letter-spacing:0;min-width:0}
+.fd-reference-shell .topbar-breadcrumb>span{font-size:12px;letter-spacing:0;color:#4a5571;white-space:nowrap}
+.fd-reference-shell .topbar-breadcrumb>svg{color:#b2b9c9;flex-shrink:0}
+.fd-compact-context{position:relative;min-width:0;display:flex}
+.fd-compact-context select{border:0;outline-offset:4px;color:#151e33;font-weight:700;font-size:12px;background:transparent;max-width:180px;min-width:0;padding:7px 18px 7px 0;cursor:pointer;border-radius:5px;text-overflow:ellipsis}
+.fd-context-error{position:absolute;top:40px;left:0;z-index:40;padding:10px;background:#fff3f2;color:#953b34;border:1px solid #ddaaa5;border-radius:8px;min-width:240px;font-size:12px}
+.fd-reference-shell .topbar-right{gap:25px;flex-shrink:0}
+.fd-reference-shell .topbar .icon-button{color:#101b2e;padding:4px}
+.fd-reference-shell .avatar{width:40px;height:40px;background:#344158;border:1px solid #a8b0c2;box-shadow:inset 0 3px 9px #c9d9fe30,0 3px 9px #0f1a3020;color:#fff;font-size:19px;font-weight:600}
+.fd-profile-name{font-size:14px;font-weight:700;max-width:150px;overflow:hidden;text-overflow:ellipsis}
+.fd-header-popover{position:relative}
+.fd-header-popover summary{display:flex;align-items:center;gap:13px;cursor:pointer;list-style:none;position:relative;min-height:40px}
+.fd-header-popover summary::-webkit-details-marker{display:none}
+.fd-header-popover:not(.fd-profile-menu) summary>i{position:absolute;top:5px;right:0;width:8px;height:8px;background:#d0f44e;border-radius:50%}
+.fd-header-popover>div{position:absolute;right:0;top:52px;min-width:240px;max-width:310px;padding:19px;background:#fff;color:var(--fd-ink);border:1px solid #dce1eb;border-radius:13px;box-shadow:0 16px 40px #18263920;z-index:40;font-size:13px}
+.fd-header-popover>div p{font-size:12px;color:#68748a;line-height:1.6;margin:9px 0}
+.fd-header-popover>div small{font-size:10px;color:#67748e}
+.fd-header-popover>div button{display:block;width:100%;text-align:left;border:0;border-top:1px solid #e7eaf0;padding:12px 0 3px;margin-top:8px;background:none;color:#192641;font-size:12px}
+.fd-reference-shell.is-dashboard,.fd-reference-shell.is-dashboard .app-frame{background:#f5f5f6;color:var(--fd-ink)}
+.fd-reference-shell.is-dashboard .main-content{padding:13px 24px 12px 18px;max-width:none}
+.fd-reference-shell .fd-skip-link{position:fixed;top:8px;left:240px;z-index:60;transform:translateY(-150%);background:#d4fa46;color:#142027;padding:10px 16px;border-radius:6px;font-size:13px}
+.fd-reference-shell .fd-skip-link:focus{transform:translateY(0)}
+.fd-reference-shell button:focus-visible,.fd-reference-shell summary:focus-visible,.fd-reference-shell select:focus-visible{outline:2px solid #4262e8;outline-offset:4px}
+.fd-reference-shell .sidebar button:focus-visible{outline-color:#d2fa43}
+.fd-sidebar-scrim{display:none}
+@media(min-width:1800px){.fd-reference-shell.is-dashboard .main-content{max-width:1600px;margin:0 auto}.fd-reference-shell .sidebar{width:240px}}
+@media(max-width:1450px){.fd-reference-shell .sidebar{width:200px;padding-left:11px;padding-right:11px}.fd-reference-shell .nav-item{gap:14px;font-size:11px}.fd-reference-shell .sidebar-top{padding-left:11px}.fd-nova-brand{gap:9px}.fd-nova-brand img{width:42px}.fd-nova-brand strong{font-size:17px}.fd-reference-shell .topbar{padding-left:24px;padding-right:24px}.fd-reference-shell .topbar-right{gap:19px}.fd-topbar-left{gap:15px}}
+@media(max-width:1100px){.fd-reference-shell .sidebar{width:190px}.fd-reference-shell .topbar-breadcrumb{gap:8px}.fd-topbar-divider,.fd-profile-name{display:none}.fd-reference-shell .topbar-right{gap:16px}.fd-onboarding-badge{font-size:8px;padding:0 9px}.fd-reference-shell .topbar{padding-right:20px;padding-left:20px}.fd-topbar-left{gap:12px}.fd-nova-brand strong{font-size:16px}}
+@media(max-width:780px){.fd-reference-shell .sidebar{position:fixed;left:0;top:0;bottom:0;width:222px;height:100dvh;transform:translateX(-105%);transition:transform .25s}.fd-reference-shell .sidebar.sidebar-open{transform:translateX(0)}.fd-reference-shell .sidebar-top{padding-bottom:37px;gap:8px}.fd-reference-shell .mobile-close{display:grid;padding:3px}.fd-reference-shell .mobile-close svg{width:18px}.fd-reference-shell .sidebar-top .fd-nova-brand{gap:5px}.fd-reference-shell .sidebar-top .fd-nova-brand img{width:38px}.fd-reference-shell .sidebar-top .fd-nova-brand strong{font-size:15px}.fd-reference-shell .sidebar-top .fd-nova-brand small{font-size:10px}.fd-reference-shell .fd-sidebar-scrim{display:block;position:fixed;inset:0;border:0;background:#0e162865;z-index:29;cursor:default}.fd-reference-shell .topbar{height:68px;padding:0 18px}.fd-reference-shell .topbar-breadcrumb>span,.fd-reference-shell .topbar-breadcrumb>svg,.fd-onboarding-badge{display:none}.fd-reference-shell .topbar-right{gap:17px}.fd-reference-shell .topbar .avatar{width:34px;height:34px;font-size:16px}.fd-reference-shell .topbar .mobile-menu{display:grid}.fd-reference-shell.is-dashboard .main-content{padding:12px 18px 24px}.fd-reference-shell .fd-skip-link{left:12px}.fd-sidebar-quote{padding-bottom:80px}}
+@media(max-width:420px){.fd-reference-shell .topbar{padding:0 14px}.fd-topbar-left{gap:10px}.fd-reference-shell .topbar-right{gap:12px}.fd-reference-shell .fd-header-search{display:none}.fd-compact-context select{font-size:11px;max-width:140px}.fd-profile-menu summary{gap:5px}.fd-reference-shell.is-dashboard .main-content{padding:7px 12px 24px}}
+@media(prefers-reduced-motion:reduce){.fd-reference-shell *{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* Let the viewport anchor the sidebar on long resource and plan pages. */
+.fd-reference-shell{overflow:clip}
+.fd-reference-shell .sidebar{position:sticky;top:0;height:100dvh;max-height:100dvh;flex-shrink:0;overflow-y:auto;overscroll-behavior:contain}
+.fd-reference-shell .nav-item>svg{stroke-width:1.8}
+@media(max-width:780px){.fd-reference-shell .sidebar{position:fixed}}
+/* Base .app loads after the shell stylesheet; retain the viewport scroll container. */
+.app.fd-reference-shell{overflow:clip}

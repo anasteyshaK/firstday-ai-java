@@ -1,0 +1,168 @@
+.fd-reference-shell.is-onboarding,.fd-reference-shell.is-onboarding .app-frame{background:#f7f8ff;color:#0c1237;min-height:calc(100dvh - 1px)}
+.fd-reference-shell.is-onboarding .main-shell{position:relative;isolation:isolate;overflow:clip;background:radial-gradient(ellipse at 67% 44%,#e1e6ff80,transparent 67%),#f8f9ff}
+.fd-reference-shell.is-onboarding .main-shell:after{content:'';position:absolute;z-index:-1;pointer-events:none;left:-28px;right:-28px;bottom:-95px;aspect-ratio:3;background:url('/assets/onboarding/floor-wave.png') center bottom/100% auto no-repeat}
+.fd-reference-shell.is-onboarding .main-content{max-width:none;padding:32px 64px 76px 0}
+.fd-reference-shell.is-onboarding .sidebar{width:225px;height:calc(100dvh - 1px);padding:20px 16px 55px;background-position:center -40px}
+.fd-reference-shell.is-onboarding .sidebar-top{padding:0 13px 35px}
+.fd-reference-shell.is-onboarding .fd-nova-brand{gap:12px}
+.fd-reference-shell.is-onboarding .fd-nova-brand img{width:49px;height:35px}
+.fd-reference-shell.is-onboarding .fd-nova-brand strong{font-size:18px}
+.fd-reference-shell.is-onboarding .fd-nova-brand small{font-size:12px}
+.fd-reference-shell.is-onboarding .nav{gap:6px}
+.fd-reference-shell.is-onboarding .nav-item{height:45px;padding:0 19px;gap:20px;font-size:12px;border-radius:16px}
+.fd-reference-shell.is-onboarding .nav-item.active{background:#283955dc;border-color:#c5ea486b;box-shadow:inset 1px 0 0 #d4fb36}
+.fd-reference-shell.is-onboarding .nav-item.active>svg{color:#d2fa28;filter:drop-shadow(0 0 7px #d2fa4330)}
+.fd-reference-shell.is-onboarding .fd-nav-active-dot{top:18px;right:11px;width:8px;height:8px;box-shadow:none}
+.fd-reference-shell.is-onboarding .fd-sidebar-quote{margin:auto 25px 0;padding-bottom:70px}
+.fd-reference-shell.is-onboarding .fd-sidebar-quote p{font-size:18px;color:#f6f6ff;line-height:1.5;font-style:italic}
+.fd-reference-shell.is-onboarding .fd-sidebar-quote>span{width:40px;height:3px;background:#d2fa22}
+.fd-reference-shell.is-onboarding .fd-sidebar-status{font-size:10px;padding-left:20px}
+.fd-reference-shell.is-onboarding .fd-sidebar-status>svg{margin-right:0;color:#9297f6}
+.fd-reference-shell.is-onboarding .topbar{height:64px;background:#f8f9ffb0;border-color:#e3e6fa;padding:0 30px}
+.fd-reference-shell.is-onboarding .fd-topbar-left{gap:31px}
+.fd-reference-shell.is-onboarding .fd-topbar-divider{display:none}
+.fd-reference-shell.is-onboarding .fd-onboarding-badge{height:33px;font-size:10px;padding:0 12px;background:transparent;border-color:#d7dfff}
+.fd-reference-shell.is-onboarding .topbar-breadcrumb{font-size:13px;gap:24px}
+.fd-reference-shell.is-onboarding .topbar-breadcrumb>span,.fd-reference-shell.is-onboarding .fd-compact-context select{font-size:13px;color:#0d143a;font-weight:600}
+.fd-reference-shell.is-onboarding .topbar-breadcrumb>svg{color:#141c36}
+.fd-reference-shell.is-onboarding .fd-current-breadcrumb{font-size:14px;color:#0b102d;font-weight:800;white-space:nowrap}
+.fd-reference-shell.is-onboarding .avatar{width:40px;height:40px;background:#243b9c;box-shadow:inset 0 5px 8px #a1a1ff80,0 4px 10px #6376ba36;color:white}
+.fd-onboarding-page,.fd-reference-shell.is-onboarding .fd-project-page{position:relative;isolation:isolate;max-width:1108px;margin:0 auto;min-width:0}
+.fd-onboarding-hero{height:202px;position:relative;padding:6px 82px 0;isolation:isolate}
+.fd-onboarding-hero>img{position:absolute;z-index:-1;width:870px;max-width:none;right:-181px;top:-51px;pointer-events:none;user-select:none}
+.fd-onboarding-eyebrow{display:block;font-size:12px;line-height:18px;letter-spacing:4px;color:#0c1026;font-weight:800}
+.fd-onboarding-hero h1{display:flex;align-items:center;gap:13px;font-size:52px;line-height:1.12;letter-spacing:-1.7px;font-weight:800;margin:12px 0 6px;color:#080e3e}
+.fd-onboarding-hero h1>svg{width:37px;height:37px;color:#d1fa22;fill:#d1fa22;stroke-width:1}
+.fd-onboarding-subtitle{font-size:20px;line-height:1.5;letter-spacing:-.45px;margin:0;color:#172367;font-weight:500}
+.fd-onboarding-intro{font-size:15px;line-height:1.55;max-width:470px;margin:10px 0 0;color:#3c4c89;font-weight:500}
+.fd-onboarding-board{position:relative;border:1px solid #d6deff;border-radius:36px;padding:24px 28px 22px;background:#ffffff66;box-shadow:inset 0 1px 0 #fff,0 18px 28px #6582dd20;backdrop-filter:blur(10px)}
+.fd-onboarding-progress.glass{padding:18px 44px 12px;min-height:132px;border-radius:21px;background:linear-gradient(120deg,#294f9f,#0c2353 72%,#3039ad);border:1px solid #6886e0;box-shadow:inset 0 -7px 20px #4d51ff66,inset 0 1px 2px #6da7ff80,0 10px 28px #627edb20;color:#fff}
+.fd-onboarding-progress .card-heading{display:flex;align-items:center;gap:22px;margin:0 0 10px;min-height:31px}
+.fd-onboarding-progress .card-heading strong{font-size:19px;font-weight:800;letter-spacing:-.4px}
+.fd-onboarding-progress .card-heading b{font-size:28px;line-height:1.1;letter-spacing:-1px;font-weight:800;margin-left:0;font-variant-numeric:tabular-nums}
+.fd-onboarding-refresh{display:inline-flex;align-items:center;justify-content:center;gap:7px;color:#e1e9ff;background:transparent;border:1px solid transparent;border-radius:8px;padding:5px;cursor:pointer;font-family:inherit}
+.fd-onboarding-progress .fd-onboarding-refresh{margin-left:auto;opacity:.75}
+.fd-onboarding-refresh:hover:not(:disabled){background:#ffffff20;border-color:#c8d7ff80;opacity:1}
+.fd-onboarding-progress .progress-track{height:18px;background:#647dd65c;overflow:hidden;border-radius:20px;margin:0}
+.fd-onboarding-progress .progress-fill{height:100%;background:linear-gradient(90deg,#dbff08,#d8ff31 38%,#7cffe0 75%,#4fbbff);border-radius:20px;box-shadow:inset 0 1px 2px #ffffff90;transition:width .3s ease}
+.fd-onboarding-progress .progress-foot{display:flex;align-items:center;gap:15px;margin:10px 0 0;color:#f5f7ff;font-size:13px;min-height:29px}
+.fd-onboarding-progress .progress-foot>svg{width:20px;height:20px;flex-shrink:0}
+.fd-onboarding-status{display:inline-flex;align-items:center;justify-content:center;margin-left:auto;padding:7px 18px;border-radius:20px;background:#4b5cdb90;border:1px solid #8e9eff60;color:#f3f4ff;letter-spacing:.6px;font-size:10px;font-weight:800;white-space:nowrap}
+.fd-onboarding-layout{display:grid;grid-template-columns:minmax(300px,.636fr) minmax(0,1fr);gap:26px;margin-top:24px;align-items:stretch}
+.fd-onboarding-weeks.glass,.fd-onboarding-detail.glass{background:linear-gradient(145deg,#ffffff9c,#f3f4ff75);border:1px solid #d6ddff;border-radius:22px;box-shadow:inset 0 1px 0 #fff,0 13px 18px #6476cc24;color:#0d143c;min-width:0}
+.fd-onboarding-weeks{display:flex;flex-direction:column;padding:18px 12px 14px}
+.fd-onboarding-weeks h2{display:flex;align-items:center;gap:17px;margin:0 12px 20px;font-size:19px;line-height:31px;font-weight:800;letter-spacing:-.6px;color:#0a1034}
+.fd-onboarding-weeks h2>svg{color:#111}
+.fd-onboarding-week{position:relative;display:flex;align-items:center;gap:25px;min-height:68px;padding:10px 14px;border:1px solid transparent;border-radius:14px;text-align:left;width:100%;background:transparent;color:#0b123b;font-family:inherit;cursor:pointer;transition:background .2s}
+.fd-onboarding-week:not(:last-child):after{content:'';position:absolute;left:28px;top:47px;bottom:-21px;width:1px;background:#bcc9e3;pointer-events:none}
+.fd-onboarding-week.selected{background:linear-gradient(100deg,#eaff92c9,#f0ffb3bd)}
+.fd-onboarding-week:hover{background:#e9eeff}
+.fd-onboarding-week.selected:hover{background:#edffa4}
+.fd-onboarding-week-dot{display:grid;place-items:center;width:27px;height:27px;flex-shrink:0;border-radius:50%;color:#263b9c;background:#fff9;z-index:1}
+.fd-onboarding-week-dot:has(>svg.lucide-check){background:#d6fc22;color:#1d2910}
+.fd-onboarding-week.selected .fd-onboarding-week-dot{background:#d9fb45}
+.fd-onboarding-week-copy{display:flex;flex:1;min-width:0;flex-direction:column;gap:2px}
+.fd-onboarding-week-copy strong{font-size:18px;font-weight:800;letter-spacing:-.6px;line-height:1.3}
+.fd-onboarding-week-copy small{font-size:13px;font-weight:600;letter-spacing:-.4px;color:#192255;line-height:1.4}
+.fd-onboarding-week-count{font-size:14px;font-weight:650;font-variant-numeric:tabular-nums}
+.fd-onboarding-week>svg{flex-shrink:0;color:#10182b;margin-left:-7px}
+.fd-onboarding-detail{padding:16px 19px 15px}
+.fd-onboarding-detail-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin:0 5px 12px}
+.fd-onboarding-detail-top .eyebrow{font-size:10px;letter-spacing:3px;line-height:17px;color:#243c9a;font-weight:800}
+.fd-onboarding-detail-top h2{font-size:22px;line-height:1.3;letter-spacing:-.9px;color:#08103a;font-weight:800;margin:5px 0 6px}
+.fd-onboarding-detail-top p{font-size:14px;line-height:1.5;letter-spacing:-.4px;color:#41528f;margin:0}
+.fd-onboarding-count{border:0;background:#e2e7ff;color:#111b53;border-radius:20px;padding:7px 15px;font-size:12px;line-height:18px;font-weight:800;white-space:nowrap;flex-shrink:0}
+.fd-onboarding-task-list{display:flex;flex-direction:column;gap:5px}
+.fd-onboarding-task-row{position:relative;min-width:0}
+.fd-onboarding-task{display:flex;align-items:center;gap:14px;min-height:35px;width:100%;padding:4px 16px;border:1px solid #d3dcff;border-radius:15px;background:#ffffff38;color:#121729;text-align:left;font-family:inherit;cursor:pointer;transition:background .2s,border-color .2s}
+.fd-onboarding-task:hover:not(:disabled){background:#fff;border-color:#adb9ed}
+.fd-onboarding-task:disabled{opacity:.65;cursor:wait}
+.fd-onboarding-task-check{display:grid;place-items:center;width:25px;height:25px;flex-shrink:0;color:#29429e}
+.fd-onboarding-task-check>svg{width:25px;height:25px;stroke-width:1.25}
+.fd-onboarding-task.complete .fd-onboarding-task-check{background:#d7fb22;border-radius:50%;color:#111d10;box-shadow:0 0 10px #d8fc3340}
+.fd-onboarding-task.complete .fd-onboarding-task-check>svg{fill:#d7fb22;stroke-width:1.7}
+.fd-onboarding-task-copy{display:flex;flex:1;min-width:0}
+.fd-onboarding-task-copy strong{font-size:14.5px;line-height:1.5;letter-spacing:-.35px;font-weight:750}
+.fd-onboarding-day{font-size:14px;color:#253c91;white-space:nowrap;flex-shrink:0;margin-left:16px}
+.fd-onboarding-task-description>summary{position:absolute;right:65px;top:10px;display:flex;cursor:pointer;color:#596bb2;list-style:none;opacity:0;border-radius:3px}
+.fd-onboarding-task-description>summary::-webkit-details-marker{display:none}
+.fd-onboarding-task-row:hover .fd-onboarding-task-description>summary,.fd-onboarding-task-description:focus-within>summary,.fd-onboarding-task-description[open]>summary{opacity:1}
+.fd-onboarding-task-description>p{margin:6px 8px 7px;padding:9px 12px;border-left:2px solid #a4bcf2;background:#edf1ff;color:#465583;font-size:12px;line-height:1.6;overflow-wrap:anywhere;border-radius:4px}
+.fd-onboarding-error,.fd-onboarding-loading{margin:0 0 16px;padding:16px 20px;border:1px solid #d8def5;border-radius:16px;color:#52648f;background:#fff9;font-size:14px}
+.fd-onboarding-error{color:#8f3a49;background:#fff0f3;border-color:#edc4cf}
+.fd-onboarding-retry{color:#334981;border-color:#bdc9ef;padding:10px 16px;background:#fff9;justify-content:flex-start;max-width:max-content}
+.fd-reference-shell.is-onboarding .fd-project-progress{background:linear-gradient(110deg,#284d9f,#102454 80%,#3933bf);border-color:#7791e0;color:#fff;border-radius:21px}
+.fd-reference-shell.is-onboarding .fd-project-progress .eyebrow,.fd-reference-shell.is-onboarding .fd-project-progress>strong,.fd-reference-shell.is-onboarding .fd-project-progress p{color:#eef5ff}
+.fd-reference-shell.is-onboarding .fd-project-progress progress{accent-color:#d4fa2e}
+.fd-reference-shell.is-onboarding .fd-project-stage,.fd-reference-shell.is-onboarding .fd-project-help{background:#ffffff9c;border-color:#d6dfff;color:#111d4d;box-shadow:0 12px 24px #6c81c41c}
+.fd-reference-shell.is-onboarding .fd-project-stage>header{border-color:#d8dff3}
+.fd-reference-shell.is-onboarding .fd-project-task{border-color:#d8dff3}
+.fd-reference-shell.is-onboarding .fd-project-stage p,.fd-reference-shell.is-onboarding .fd-project-help p,.fd-reference-shell.is-onboarding .fd-project-footnote{color:#53638b}
+.fd-reference-shell.is-onboarding .fd-project-stage-number,.fd-reference-shell.is-onboarding .fd-project-task-title svg{color:#526bb7}
+.fd-reference-shell.is-onboarding .fd-project-task.done .fd-project-task-title svg{color:#537f16}
+.fd-reference-shell.is-onboarding .fd-project-task.blocked .fd-project-task-title svg{color:#a36b21}
+.fd-reference-shell.is-onboarding .fd-project-task-actions button,.fd-reference-shell.is-onboarding .fd-project-task select,.fd-reference-shell.is-onboarding .fd-project-blocker-form button,.fd-reference-shell.is-onboarding .fd-project-text-button{color:#2d468a;background:#f4f6ff;border-color:#c8d3f2}
+.fd-reference-shell.is-onboarding .fd-project-blocker-form label{color:#344a7c}
+.fd-reference-shell.is-onboarding .fd-project-blocker-form textarea{background:#fff;color:#263e70;border-color:#a7b9e3}
+.fd-reference-shell.is-onboarding .fd-project-task .fd-project-blocker{background:#fff2d9;color:#805617;border-color:#d9a653}
+.fd-reference-shell.is-onboarding .fd-project-help button{background:#f1f4ff;border-color:#cad5f3;color:#243b79}
+.fd-reference-shell.is-onboarding .fd-project-help button svg{color:#566eb4}
+.fd-reference-shell.is-onboarding .fd-project-error{color:#8f3a49;background:#fff0f3;border-color:#edc4cf}
+.fd-reference-shell.is-onboarding .fd-project-page :is(button,select,textarea):focus-visible{outline-color:#496bd0}
+.fd-onboarding-project-toolbar{justify-content:flex-end;margin:-18px 0 18px}
+.fd-onboarding-progress .card-heading{gap:28px}
+.fd-onboarding-progress .card-heading strong{font-size:20px}
+.fd-onboarding-weeks h2{font-size:20px}
+.fd-onboarding-week{gap:28px}
+.fd-onboarding-detail-top h2{font-size:24px;line-height:1.2}
+.fd-reference-shell.is-onboarding .fd-onboarding-waiting{background:#ffffffa6;color:#172a60;border:1px solid #d4def8;border-radius:24px;box-shadow:0 15px 25px #6a83d625}
+@media(min-width:1800px){.fd-reference-shell.is-onboarding .main-content{padding-left:24px;padding-right:64px}.fd-onboarding-page,.fd-reference-shell.is-onboarding .fd-project-page{max-width:1200px}}
+@media(max-width:1450px){.fd-reference-shell.is-onboarding .sidebar{width:210px;padding-left:12px;padding-right:12px}.fd-reference-shell.is-onboarding .main-content{padding:24px 28px 65px}.fd-onboarding-hero{height:190px;padding-left:46px}.fd-onboarding-hero h1{font-size:44px}.fd-onboarding-hero>img{width:760px;right:-90px;top:-36px}.fd-onboarding-board{padding:22px}.fd-onboarding-layout{gap:20px;grid-template-columns:minmax(280px,.64fr) minmax(0,1fr)}.fd-onboarding-progress.glass{padding-left:32px;padding-right:32px}.fd-onboarding-week{gap:17px}.fd-onboarding-week-copy strong{font-size:17px}.fd-onboarding-week-copy small{font-size:12px}.fd-onboarding-detail-top h2{font-size:20px}.fd-onboarding-detail-top p{font-size:12px}.fd-onboarding-count{font-size:11px;padding:5px 10px}.fd-onboarding-task-copy strong{font-size:12px}.fd-onboarding-day{font-size:12px}.fd-reference-shell.is-onboarding .topbar-breadcrumb{gap:14px}.fd-reference-shell.is-onboarding .fd-topbar-left{gap:20px}}
+@media(max-width:1150px){.fd-reference-shell.is-onboarding .sidebar{width:190px}.fd-reference-shell.is-onboarding .main-content{padding:22px 22px 60px}.fd-onboarding-hero{padding-left:20px;height:180px}.fd-onboarding-hero h1{font-size:38px}.fd-onboarding-subtitle{font-size:17px;max-width:510px}.fd-onboarding-intro{font-size:13px;max-width:430px}.fd-onboarding-hero>img{width:620px;right:-70px;top:-15px;opacity:.7}.fd-onboarding-board{padding:20px}.fd-onboarding-layout{grid-template-columns:1fr;gap:20px}.fd-onboarding-weeks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px}.fd-onboarding-weeks h2{grid-column:1/-1;margin-bottom:8px}.fd-onboarding-week:not(:last-child):after{display:none}.fd-onboarding-detail{padding:22px}.fd-onboarding-task{min-height:42px}.fd-onboarding-task-description>summary{top:14px}.fd-reference-shell.is-onboarding .fd-onboarding-badge{display:none}.fd-reference-shell.is-onboarding .fd-topbar-left{gap:12px}.fd-reference-shell.is-onboarding .topbar-breadcrumb{gap:12px}}
+@media(max-width:780px){.fd-reference-shell.is-onboarding .sidebar{width:225px}.fd-reference-shell.is-onboarding .topbar{height:60px;padding:0 16px}.fd-reference-shell.is-onboarding .fd-current-breadcrumb{display:none}.fd-reference-shell.is-onboarding .main-content{padding:24px 14px 52px}.fd-onboarding-hero{padding:0 8px;height:190px}.fd-onboarding-eyebrow{font-size:10px;letter-spacing:3px}.fd-onboarding-hero h1{font-size:34px;letter-spacing:-1px;gap:8px;margin-top:10px}.fd-onboarding-hero h1>svg{width:27px;height:27px}.fd-onboarding-subtitle{font-size:15px;line-height:1.5;max-width:340px}.fd-onboarding-intro{font-size:12px;max-width:300px;margin-top:8px}.fd-onboarding-hero>img{width:460px;right:-140px;top:20px;opacity:.24}.fd-onboarding-board{padding:14px;border-radius:24px}.fd-onboarding-progress.glass{padding:16px;min-height:130px;border-radius:17px}.fd-onboarding-progress .card-heading{gap:12px;margin-bottom:13px}.fd-onboarding-progress .card-heading strong{font-size:15px}.fd-onboarding-progress .card-heading>svg{width:21px}.fd-onboarding-progress .card-heading b{font-size:24px}.fd-onboarding-progress .progress-track{height:13px}.fd-onboarding-progress .progress-foot{gap:7px;font-size:10px;margin-top:12px;flex-wrap:wrap}.fd-onboarding-status{font-size:8px;padding:5px 9px}.fd-onboarding-progress .progress-foot>svg{width:16px}.fd-onboarding-layout{margin-top:16px;gap:16px}.fd-onboarding-weeks{grid-template-columns:1fr;padding:16px 10px}.fd-onboarding-weeks h2{font-size:17px;gap:12px;margin:0 12px 12px}.fd-onboarding-weeks h2>svg{width:24px}.fd-onboarding-week{min-height:59px;padding:8px 12px;gap:18px}.fd-onboarding-week-copy strong{font-size:16px}.fd-onboarding-week-copy small{font-size:11px}.fd-onboarding-week-count{font-size:12px}.fd-onboarding-detail{padding:17px 12px}.fd-onboarding-detail-top{margin:0 0 13px;position:relative;display:block;padding-top:0}.fd-onboarding-detail-top .eyebrow{font-size:8px;letter-spacing:2px}.fd-onboarding-detail-top h2{font-size:19px;line-height:1.35;max-width:90%;margin-top:8px}.fd-onboarding-count{position:static;display:inline-flex;margin-top:10px;font-size:10px}.fd-onboarding-task{gap:9px;padding:8px 9px;min-height:49px;border-radius:13px}.fd-onboarding-task-copy strong{font-size:12px;letter-spacing:-.2px}.fd-onboarding-task-check,.fd-onboarding-task-check>svg{width:21px;height:21px}.fd-onboarding-day{font-size:10px;margin-left:4px}.fd-onboarding-task-description>summary{position:static;opacity:1;justify-content:flex-end;margin:4px 8px 0}.fd-onboarding-task-description>p{font-size:11px}.fd-reference-shell.is-onboarding .main-shell:after{left:-160px;right:-160px;bottom:-20px;opacity:.7}.fd-onboarding-project-toolbar{margin:-10px 0 16px}}
+@media(prefers-reduced-motion:reduce){.fd-onboarding-progress .progress-fill{transition:none}}
+@media(max-height:800px) and (min-width:1151px){
+  .fd-reference-shell.is-onboarding .main-content{padding:18px 24px 12px}
+  .fd-onboarding-hero{height:clamp(130px,calc(100dvh - 590px),150px);padding-top:0}
+  .fd-onboarding-eyebrow{font-size:10px;line-height:15px}
+  .fd-onboarding-hero h1{font-size:38px;line-height:1.2;margin:7px 0 4px}
+  .fd-onboarding-subtitle{font-size:17px;line-height:1.4}
+  .fd-onboarding-intro{font-size:12px;line-height:1.5;margin-top:6px;max-width:430px}
+  .fd-onboarding-hero>img{width:650px;right:-60px;top:-45px}
+  .fd-onboarding-board{padding:18px;border-radius:26px}
+  .fd-onboarding-progress.glass{min-height:110px;padding:12px 28px}
+  .fd-onboarding-progress .card-heading{min-height:26px;margin-bottom:8px;gap:18px}
+  .fd-onboarding-progress .card-heading strong{font-size:17px}
+  .fd-onboarding-progress .card-heading b{font-size:24px}
+  .fd-onboarding-progress .progress-track{height:14px}
+  .fd-onboarding-progress .progress-foot{min-height:24px;margin-top:8px;font-size:11px}
+  .fd-onboarding-status{font-size:8px;padding:5px 12px}
+  .fd-onboarding-layout{margin-top:18px;gap:20px}
+  .fd-onboarding-weeks{padding:16px 10px 12px}
+  .fd-onboarding-weeks h2{font-size:18px;margin-bottom:12px}
+  .fd-onboarding-week{min-height:58px;padding:8px 12px;gap:18px}
+  .fd-onboarding-week-copy strong{font-size:16px}
+  .fd-onboarding-detail{padding:14px 16px}
+  .fd-onboarding-detail-top h2{font-size:20px}
+  .fd-onboarding-detail-top p{font-size:12px}
+  .fd-onboarding-task{min-height:32px;padding:3px 12px}
+  .fd-onboarding-task-check,.fd-onboarding-task-check>svg{width:23px;height:23px}
+  .fd-onboarding-task-copy strong{font-size:12.5px}
+  .fd-onboarding-day{font-size:12px}
+  .fd-onboarding-task-list{gap:4px}
+}
+@media(max-height:740px) and (min-width:1151px){
+  .fd-onboarding-intro{display:none}
+}
+
+/* Project content and its title share the same left edge. */
+.fd-reference-shell.is-onboarding .fd-project-page>.fd-onboarding-hero{padding-inline:0}
+.fd-reference-shell.is-onboarding .fd-project-page>.fd-onboarding-hero h1{font-size:clamp(30px,3vw,46px);max-width:720px}
+.fd-reference-shell.is-onboarding .fd-project-page .fd-project-progress{width:100%}
+.fd-reference-shell.is-onboarding .fd-project-page .fd-project-stages{align-items:start}
+.fd-reference-shell.is-onboarding .fd-project-page .fd-project-progress progress{appearance:none;height:12px;border:0;border-radius:999px;overflow:hidden;background:#ffffff24;color:#d2fa43}
+.fd-reference-shell.is-onboarding .fd-project-progress progress::-webkit-progress-bar{background:#ffffff24;border-radius:999px}
+.fd-reference-shell.is-onboarding .fd-project-progress progress::-webkit-progress-value{background:linear-gradient(90deg,#d4fa2e,#6ce6ff);border-radius:999px}
+.fd-reference-shell.is-onboarding .fd-project-progress progress::-moz-progress-bar{background:linear-gradient(90deg,#d4fa2e,#6ce6ff);border-radius:999px}
+.fd-reference-shell.is-onboarding .fd-project-waiting-page>.fd-onboarding-hero{padding-inline:0}
+.fd-reference-shell.is-onboarding .fd-project-waiting-page>.fd-onboarding-hero h1{font-size:clamp(30px,3vw,46px)}

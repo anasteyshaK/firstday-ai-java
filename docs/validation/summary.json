@@ -1,0 +1,119 @@
+{
+  "date": "2026-11-24",
+  "edition": "Java",
+  "command": "backend/mvnw -B -f backend/pom.xml -Dfirstday.integration=true test",
+  "totals": {
+    "tests": 213,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "suites": [
+    {
+      "name": "com.novatech.firstday.ApiContractTest",
+      "tests": "18",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "6.693",
+      "java": "21.0.6"
+    },
+    {
+      "name": "com.novatech.firstday.AuthServiceTest",
+      "tests": "14",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "1.761",
+      "java": "21.0.6"
+    },
+    {
+      "name": "com.novatech.firstday.ChatScopeTest",
+      "tests": "17",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.355",
+      "java": "21.0.6"
+    },
+    {
+      "name": "com.novatech.firstday.ChatServiceTest",
+      "tests": "7",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.089",
+      "java": "21.0.6"
+    },
+    {
+      "name": "com.novatech.firstday.CoreTest",
+      "tests": "45",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "2.083",
+      "java": "21.0.6"
+    },
+    {
+      "name": "com.novatech.firstday.HistoryServiceTest",
+      "tests": "12",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.054",
+      "java": "21.0.6"
+    },
+    {
+      "name": "com.novatech.firstday.InternshipAnswerTest",
+      "tests": "13",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.116",
+      "java": "21.0.6"
+    },
+    {
+      "name": "com.novatech.firstday.InternshipScopeTest",
+      "tests": "15",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "3.345",
+      "java": "21.0.6"
+    },
+    {
+      "name": "com.novatech.firstday.OllamaClientTest",
+      "tests": "4",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.683",
+      "java": "21.0.6"
+    },
+    {
+      "name": "com.novatech.firstday.PersonalServiceTest",
+      "tests": "8",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.072",
+      "java": "21.0.6"
+    },
+    {
+      "name": "com.novatech.firstday.ServiceIntegrationTest",
+      "tests": "60",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "13.805",
+      "java": "21.0.6"
+    }
+  ],
+  "frontend_build": "passed",
+  "database_documents": 77,
+  "database_chunks": 154,
+  "embedded_chunks": 154,
+  "unit_tests": 131,
+  "fast_contract_tests": 22,
+  "integration_tests": 60
+}

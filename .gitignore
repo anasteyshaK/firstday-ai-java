@@ -1,0 +1,68 @@
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Python environments and generated files
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
+# Frontend dependencies, build output, and caches
+node_modules/
+frontend/dist/
+*.tsbuildinfo
+.vite/
+coverage/
+
+# Local reports, logs, and temporary files
+/reports/
+/logs/
+/tmp/
+/temp/
+*.log
+*.log.*
+*.tmp
+*.bak
+
+# Local database data and exports
+/db/data/
+/db/pgdata/
+/db/backups/
+*.db
+*.sqlite
+*.sqlite3
+*.sqlite-journal
+*.sqlite3-journal
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite3-wal
+*.sqlite3-shm
+*.dump
+
+# Editor settings and operating system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Java build output
+**/target/
+*.class
+*.hprof

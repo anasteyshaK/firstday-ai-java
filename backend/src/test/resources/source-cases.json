@@ -1,0 +1,100 @@
+[
+  {
+    "id": "vpn-setup",
+    "question": "Как настроить корпоративный VPN?",
+    "expected": [
+      "02_it_support/vpn-guide.md"
+    ],
+    "allowed": [
+      "02_it_support/vpn-guide.md"
+    ],
+    "expect_abstention": false
+  },
+  {
+    "id": "mfa-setup",
+    "question": "Как настроить многофакторную аутентификацию MFA?",
+    "expected": [
+      "02_it_support/account-mfa.md"
+    ],
+    "allowed": [
+      "02_it_support/account-mfa.md"
+    ],
+    "expect_abstention": false
+  },
+  {
+    "id": "mfa-recovery",
+    "question": "Я потерял доступ к MFA. Как его восстановить?",
+    "expected": [
+      "11_incidents/mfa-lockout.md"
+    ],
+    "allowed": [
+      "11_incidents/mfa-lockout.md"
+    ],
+    "expect_abstention": false
+  },
+  {
+    "id": "github-access",
+    "question": "Как получить доступ к корпоративному GitHub?",
+    "expected": [
+      "02_it_support/github-access.md"
+    ],
+    "allowed": [
+      "02_it_support/github-access.md"
+    ],
+    "expect_abstention": false
+  },
+  {
+    "id": "devops-first-week",
+    "question": "Какие задачи у DevOps Engineer на первую неделю?",
+    "expected": [
+      "08_learning/devops-track.md"
+    ],
+    "allowed": [
+      "08_learning/devops-track.md",
+      "06_devops/devops-onboarding.md"
+    ],
+    "expect_abstention": false
+  },
+  {
+    "id": "java-first-week",
+    "question": "Что делает Java Developer в первую неделю?",
+    "expected": [
+      "08_learning/java-track.md"
+    ],
+    "allowed": [
+      "08_learning/java-track.md"
+    ],
+    "expect_abstention": false
+  },
+  {
+    "id": "qa-learning",
+    "question": "Что изучает QA Engineer в первую неделю?",
+    "expected": [
+      "08_learning/qa-track.md"
+    ],
+    "allowed": [
+      "08_learning/qa-track.md",
+      "05_qa/qa-onboarding.md"
+    ],
+    "expect_abstention": false
+  },
+  {
+    "id": "first-working-day",
+    "question": "Что делать в первый рабочий день в NovaTech?",
+    "expected": [
+      "01_hr/day-one.md"
+    ],
+    "allowed": [
+      "01_hr/day-one.md",
+      "01_hr/week-one.md"
+    ],
+    "expect_abstention": false
+  },
+  {
+    "id": "slack-undocumented",
+    "question": "Как получить доступ к Slack?",
+    "expected": [],
+    "allowed": [],
+    "expect_abstention": true
+  }
+]

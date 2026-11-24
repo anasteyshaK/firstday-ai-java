@@ -1,0 +1,39 @@
+name: firstday-ai-java
+
+services:
+  postgres:
+    image: pgvector/pgvector:pg17
+    container_name: firstday_java_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: firstday_java_db
+      POSTGRES_USER: firstday_user
+      POSTGRES_PASSWORD: ${DB_PASSWORD:?Set DB_PASSWORD in your local .env}
+    ports:
+      - "127.0.0.1:5435:5432"
+    volumes:
+      - firstday_postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U firstday_user -d firstday_java_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: firstday_java_pgadmin
+    restart: unless-stopped
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@example.com
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_PASSWORD:?Set PGADMIN_PASSWORD in your local .env}
+    ports:
+      - "127.0.0.1:780:80"
+    volumes:
+      - firstday_pgadmin_data:/var/lib/pgadmin
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+volumes:
+  firstday_postgres_data:
+  firstday_pgadmin_data:

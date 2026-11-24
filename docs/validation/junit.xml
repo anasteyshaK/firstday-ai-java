@@ -1,0 +1,238 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuites tests="213" failures="0" errors="0" skipped="0">
+  <testsuite name="com.novatech.firstday.ApiContractTest" tests="18" failures="0" errors="0" skipped="0" time="6.693">
+    <testcase name="privateEndpointsRequireAuthentication(String)[1]" classname="com.novatech.firstday.ApiContractTest" time="5.039" />
+    <testcase name="privateEndpointsRequireAuthentication(String)[2]" classname="com.novatech.firstday.ApiContractTest" time="0.088" />
+    <testcase name="privateEndpointsRequireAuthentication(String)[3]" classname="com.novatech.firstday.ApiContractTest" time="0.054" />
+    <testcase name="privateEndpointsRequireAuthentication(String)[4]" classname="com.novatech.firstday.ApiContractTest" time="0.06" />
+    <testcase name="privateEndpointsRequireAuthentication(String)[5]" classname="com.novatech.firstday.ApiContractTest" time="0.045" />
+    <testcase name="privateEndpointsRequireAuthentication(String)[6]" classname="com.novatech.firstday.ApiContractTest" time="0.073" />
+    <testcase name="privateEndpointsRequireAuthentication(String)[7]" classname="com.novatech.firstday.ApiContractTest" time="0.05" />
+    <testcase name="privateEndpointsRequireAuthentication(String)[8]" classname="com.novatech.firstday.ApiContractTest" time="0.039" />
+    <testcase name="privateEndpointsRequireAuthentication(String)[9]" classname="com.novatech.firstday.ApiContractTest" time="0.051" />
+    <testcase name="privateEndpointsRequireAuthentication(String)[10]" classname="com.novatech.firstday.ApiContractTest" time="0.059" />
+    <testcase name="healthHasCompatibleShape" classname="com.novatech.firstday.ApiContractTest" time="0.13" />
+    <testcase name="streamPreservesNdjson" classname="com.novatech.firstday.ApiContractTest" time="0.433" />
+    <testcase name="chatsRequireAuthentication(String)[1]" classname="com.novatech.firstday.ApiContractTest" time="0.064" />
+    <testcase name="chatsRequireAuthentication(String)[2]" classname="com.novatech.firstday.ApiContractTest" time="0.041" />
+    <testcase name="invalidTaskStatusRejected" classname="com.novatech.firstday.ApiContractTest" time="0.153" />
+    <testcase name="databaseErrorsDoNotExposeSecrets" classname="com.novatech.firstday.ApiContractTest" time="0.034" />
+    <testcase name="readinessChecksDatabase" classname="com.novatech.firstday.ApiContractTest" time="0.033" />
+    <testcase name="registrationDoesNotAcceptBadFields" classname="com.novatech.firstday.ApiContractTest" time="0.081" />
+  </testsuite>
+  <testsuite name="com.novatech.firstday.AuthServiceTest" tests="14" failures="0" errors="0" skipped="0" time="1.761">
+    <testcase name="successfulLoginNormalizesEmailAndNeverReturnsPasswordHash" classname="com.novatech.firstday.AuthServiceTest" time="0.97" />
+    <testcase name="rejectsMissingOrUnsupportedCredentialsBeforeDatabaseAccess(String)[1]" classname="com.novatech.firstday.AuthServiceTest" time="0.009" />
+    <testcase name="rejectsMissingOrUnsupportedCredentialsBeforeDatabaseAccess(String)[2]" classname="com.novatech.firstday.AuthServiceTest" time="0.003" />
+    <testcase name="rejectsMissingOrUnsupportedCredentialsBeforeDatabaseAccess(String)[3]" classname="com.novatech.firstday.AuthServiceTest" time="0.002" />
+    <testcase name="rejectsMissingOrUnsupportedCredentialsBeforeDatabaseAccess(String)[4]" classname="com.novatech.firstday.AuthServiceTest" time="0.002" />
+    <testcase name="rejectsMissingOrUnsupportedCredentialsBeforeDatabaseAccess(String)[5]" classname="com.novatech.firstday.AuthServiceTest" time="0.003" />
+    <testcase name="rejectsMissingOrUnsupportedCredentialsBeforeDatabaseAccess(String)[6]" classname="com.novatech.firstday.AuthServiceTest" time="0.002" />
+    <testcase name="unknownLoginDoesNotCreateSession" classname="com.novatech.firstday.AuthServiceTest" time="0.004" />
+    <testcase name="administratorKeepsTheAuthenticatedIdentity" classname="com.novatech.firstday.AuthServiceTest" time="0.003" />
+    <testcase name="expiredOrRevokedSessionCannotAuthenticate" classname="com.novatech.firstday.AuthServiceTest" time="0.004" />
+    <testcase name="employeeCannotUseAdministratorOperations" classname="com.novatech.firstday.AuthServiceTest" time="0.004" />
+    <testcase name="resolvesOnlyTheDigestOfTheProvidedSession" classname="com.novatech.firstday.AuthServiceTest" time="0.006" />
+    <testcase name="wrongPasswordDoesNotCreateSession" classname="com.novatech.firstday.AuthServiceTest" time="0.644" />
+    <testcase name="logoutRevokesOnlyTheAuthenticatedSessionDigest" classname="com.novatech.firstday.AuthServiceTest" time="0.004" />
+  </testsuite>
+  <testsuite name="com.novatech.firstday.ChatScopeTest" tests="17" failures="0" errors="0" skipped="0" time="0.355">
+    <testcase name="newTopicDoesNotInheritBlockedProjectQuestion" classname="com.novatech.firstday.ChatScopeTest" time="0.021" />
+    <testcase name="projectIdCannotOverrideInternshipProfile" classname="com.novatech.firstday.ChatScopeTest" time="0.003" />
+    <testcase name="quotedFollowupRetainsTheBlockedProjectTopic" classname="com.novatech.firstday.ChatScopeTest" time="0.009" />
+    <testcase name="privateQuestionsStillUseTheInternshipPlan" classname="com.novatech.firstday.ChatScopeTest" time="0.005" />
+    <testcase name="successiveFollowupsKeepTheOriginalTopicAndPriorAnswers" classname="com.novatech.firstday.ChatScopeTest" time="0.016" />
+    <testcase name="naturalFollowupFormsKeepTheEarlierTopic(String)[1]" classname="com.novatech.firstday.ChatScopeTest" time="0.006" />
+    <testcase name="naturalFollowupFormsKeepTheEarlierTopic(String)[2]" classname="com.novatech.firstday.ChatScopeTest" time="0.002" />
+    <testcase name="naturalFollowupFormsKeepTheEarlierTopic(String)[3]" classname="com.novatech.firstday.ChatScopeTest" time="0.005" />
+    <testcase name="naturalFollowupFormsKeepTheEarlierTopic(String)[4]" classname="com.novatech.firstday.ChatScopeTest" time="0.004" />
+    <testcase name="naturalFollowupFormsKeepTheEarlierTopic(String)[5]" classname="com.novatech.firstday.ChatScopeTest" time="0.004" />
+    <testcase name="newConversationDoesNotReuseAnotherConversationsTopic" classname="com.novatech.firstday.ChatScopeTest" time="0.002" />
+    <testcase name="projectModeWithoutSelectedProjectAsksForSelection" classname="com.novatech.firstday.ChatScopeTest" time="0.002" />
+    <testcase name="internshipProjectQuestionNeverReachesKnowledgeSearch(String)[1]" classname="com.novatech.firstday.ChatScopeTest" time="0.004" />
+    <testcase name="internshipProjectQuestionNeverReachesKnowledgeSearch(String)[2]" classname="com.novatech.firstday.ChatScopeTest" time="0.003" />
+    <testcase name="internshipProjectQuestionNeverReachesKnowledgeSearch(String)[3]" classname="com.novatech.firstday.ChatScopeTest" time="0.004" />
+    <testcase name="internshipProjectQuestionNeverReachesKnowledgeSearch(String)[4]" classname="com.novatech.firstday.ChatScopeTest" time="0.004" />
+    <testcase name="internshipProjectQuestionNeverReachesKnowledgeSearch(String)[5]" classname="com.novatech.firstday.ChatScopeTest" time="0.002" />
+  </testsuite>
+  <testsuite name="com.novatech.firstday.ChatServiceTest" tests="7" failures="0" errors="0" skipped="0" time="0.089">
+    <testcase name="privateAnswerBypassesRagAndIsSavedWithoutDocumentSources" classname="com.novatech.firstday.ChatServiceTest" time="0.005" />
+    <testcase name="contextualFollowupUsesPriorQuestionButSavesTheUsersOriginalQuestion" classname="com.novatech.firstday.ChatServiceTest" time="0.014" />
+    <testcase name="projectMembershipIsCheckedBeforeHistoryAndGeneration" classname="com.novatech.firstday.ChatServiceTest" time="0.003" />
+    <testcase name="disconnectedClientDoesNotCreateACompletedExchange" classname="com.novatech.firstday.ChatServiceTest" time="0.004" />
+    <testcase name="explicitNewToolQuestionDoesNotInheritOldTopic" classname="com.novatech.firstday.ChatServiceTest" time="0.014" />
+    <testcase name="providerFailureDoesNotSaveAnIncompleteExchange" classname="com.novatech.firstday.ChatServiceTest" time="0.006" />
+    <testcase name="blankQuestionFailsBeforeReadingHistoryOrPrivateData" classname="com.novatech.firstday.ChatServiceTest" time="0.002" />
+  </testsuite>
+  <testsuite name="com.novatech.firstday.CoreTest" tests="45" failures="0" errors="0" skipped="0" time="2.083">
+    <testcase name="emptyBlockerIsInvalid" classname="com.novatech.firstday.CoreTest" time="0.002" />
+    <testcase name="privateProgressNeverCallsRag" classname="com.novatech.firstday.CoreTest" time="0.005" />
+    <testcase name="quotedPersonalFollowupRetainsOriginalTaskAcrossMultipleTurns" classname="com.novatech.firstday.CoreTest" time="0.005" />
+    <testcase name="projectTemplates(String)[1]" classname="com.novatech.firstday.CoreTest" time="0.008" />
+    <testcase name="projectTemplates(String)[2]" classname="com.novatech.firstday.CoreTest" time="0.004" />
+    <testcase name="projectTemplates(String)[3]" classname="com.novatech.firstday.CoreTest" time="0.006" />
+    <testcase name="projectTemplates(String)[4]" classname="com.novatech.firstday.CoreTest" time="0.006" />
+    <testcase name="sectionStopsBeforeSiblingHeading" classname="com.novatech.firstday.CoreTest" time="0.005" />
+    <testcase name="commandInventionRejectedBeforeAnyIo" classname="com.novatech.firstday.CoreTest" time="0.061" />
+    <testcase name="compoundQuestionsSplitWithoutSplittingComponents" classname="com.novatech.firstday.CoreTest" time="0.002" />
+    <testcase name="rejectsMalformedHashes(String)[1]" classname="com.novatech.firstday.CoreTest" time="0.002" />
+    <testcase name="rejectsMalformedHashes(String)[2]" classname="com.novatech.firstday.CoreTest" time="0.002" />
+    <testcase name="rejectsMalformedHashes(String)[3]" classname="com.novatech.firstday.CoreTest" time="0.002" />
+    <testcase name="rejectsMalformedHashes(String)[4]" classname="com.novatech.firstday.CoreTest" time="0.003" />
+    <testcase name="rejectsMalformedHashes(String)[5]" classname="com.novatech.firstday.CoreTest" time="0.002" />
+    <testcase name="rejectsMalformedHashes(String)[6]" classname="com.novatech.firstday.CoreTest" time="0.004" />
+    <testcase name="rejectsMalformedHashes(String)[7]" classname="com.novatech.firstday.CoreTest" time="0.001" />
+    <testcase name="progress(int, int, int)[1]" classname="com.novatech.firstday.CoreTest" time="0.022" />
+    <testcase name="progress(int, int, int)[2]" classname="com.novatech.firstday.CoreTest" time="0.001" />
+    <testcase name="progress(int, int, int)[3]" classname="com.novatech.firstday.CoreTest" time="0.002" />
+    <testcase name="progress(int, int, int)[4]" classname="com.novatech.firstday.CoreTest" time="0.002" />
+    <testcase name="progress(int, int, int)[5]" classname="com.novatech.firstday.CoreTest" time="0.002" />
+    <testcase name="recognizesPrivateQuestions(String)[1]" classname="com.novatech.firstday.CoreTest" time="0.004" />
+    <testcase name="recognizesPrivateQuestions(String)[2]" classname="com.novatech.firstday.CoreTest" time="0.003" />
+    <testcase name="recognizesPrivateQuestions(String)[3]" classname="com.novatech.firstday.CoreTest" time="0.002" />
+    <testcase name="recognizesPrivateQuestions(String)[4]" classname="com.novatech.firstday.CoreTest" time="0.002" />
+    <testcase name="recognizesPrivateQuestions(String)[5]" classname="com.novatech.firstday.CoreTest" time="0.002" />
+    <testcase name="detectsStack(String)[1]" classname="com.novatech.firstday.CoreTest" time="0.002" />
+    <testcase name="detectsStack(String)[2]" classname="com.novatech.firstday.CoreTest" time="0.001" />
+    <testcase name="detectsStack(String)[3]" classname="com.novatech.firstday.CoreTest" time="0.001" />
+    <testcase name="accountProfileNeverAcceptsAdminRole" classname="com.novatech.firstday.CoreTest" time="0.035" />
+    <testcase name="unrelatedFollowupDoesNotInheritTask" classname="com.novatech.firstday.CoreTest" time="0.004" />
+    <testcase name="tokenShape" classname="com.novatech.firstday.CoreTest" time="0.004" />
+    <testcase name="taskFollowupUsesPersonalContext" classname="com.novatech.firstday.CoreTest" time="0.003" />
+    <testcase name="publicQuestionsStayOutOfPersonalData(String)[1]" classname="com.novatech.firstday.CoreTest" time="0.003" />
+    <testcase name="publicQuestionsStayOutOfPersonalData(String)[2]" classname="com.novatech.firstday.CoreTest" time="0.003" />
+    <testcase name="publicQuestionsStayOutOfPersonalData(String)[3]" classname="com.novatech.firstday.CoreTest" time="0.002" />
+    <testcase name="verifiesPythonPbkdf2Fixture" classname="com.novatech.firstday.CoreTest" time="0.348" />
+    <testcase name="stackRequiresExplicitPositiveEvidence" classname="com.novatech.firstday.CoreTest" time="0.002" />
+    <testcase name="preservesCompanyTemplates(String, int)[1]" classname="com.novatech.firstday.CoreTest" time="0.006" />
+    <testcase name="preservesCompanyTemplates(String, int)[2]" classname="com.novatech.firstday.CoreTest" time="0.006" />
+    <testcase name="preservesCompanyTemplates(String, int)[3]" classname="com.novatech.firstday.CoreTest" time="0.004" />
+    <testcase name="missingProcedureIsNotInvented" classname="com.novatech.firstday.CoreTest" time="0.001" />
+    <testcase name="limitsCompoundQuestionsBeforeIo" classname="com.novatech.firstday.CoreTest" time="0.003" />
+    <testcase name="passwordRoundTripAndSalt" classname="com.novatech.firstday.CoreTest" time="1.217" />
+  </testsuite>
+  <testsuite name="com.novatech.firstday.HistoryServiceTest" tests="12" failures="0" errors="0" skipped="0" time="0.054">
+    <testcase name="deletingForeignConversationDoesNotWriteToDatabase" classname="com.novatech.firstday.HistoryServiceTest" time="0.003" />
+    <testcase name="previousQuestionsAreReturnedInChronologicalOrder" classname="com.novatech.firstday.HistoryServiceTest" time="0.007" />
+    <testcase name="listingAProjectChatRequiresActiveMembership" classname="com.novatech.firstday.HistoryServiceTest" time="0.002" />
+    <testcase name="revokedMembershipPreventsSavingNewProjectMessages" classname="com.novatech.firstday.HistoryServiceTest" time="0.002" />
+    <testcase name="unknownOrForeignConversationCannotExposeMessages" classname="com.novatech.firstday.HistoryServiceTest" time="0.005" />
+    <testcase name="conversationCannotBeReusedInAnotherProject" classname="com.novatech.firstday.HistoryServiceTest" time="0.004" />
+    <testcase name="revokedMembershipPreventsReadingExistingProjectChat" classname="com.novatech.firstday.HistoryServiceTest" time="0.005" />
+    <testcase name="foreignChatCannotProvideModelContext" classname="com.novatech.firstday.HistoryServiceTest" time="0.004" />
+    <testcase name="assistantContextKeepsBothRolesInChronologicalOrder" classname="com.novatech.firstday.HistoryServiceTest" time="0.002" />
+    <testcase name="newChatHasNoAssistantContext" classname="com.novatech.firstday.HistoryServiceTest" time="0.001" />
+    <testcase name="newConversationHasNoPreviousMessages" classname="com.novatech.firstday.HistoryServiceTest" time="0.001" />
+    <testcase name="contextCannotCrossProjectScope" classname="com.novatech.firstday.HistoryServiceTest" time="0.003" />
+  </testsuite>
+  <testsuite name="com.novatech.firstday.InternshipAnswerTest" tests="13" failures="0" errors="0" skipped="0" time="0.116">
+    <testcase name="projectOnboardingIsNotMistakenForInternship" classname="com.novatech.firstday.InternshipAnswerTest" time="0.001" />
+    <testcase name="englishInternshipQuestionRetrievesOnlyTrainingDocuments(String)[1]" classname="com.novatech.firstday.InternshipAnswerTest" time="0.007" />
+    <testcase name="englishInternshipQuestionRetrievesOnlyTrainingDocuments(String)[2]" classname="com.novatech.firstday.InternshipAnswerTest" time="0.002" />
+    <testcase name="internshipQuestionCannotReadCorporateDocumentsFromProjectScope" classname="com.novatech.firstday.InternshipAnswerTest" time="0.006" />
+    <testcase name="roleSpecificFirstWeekQuestionKeepsItsLearningTrack" classname="com.novatech.firstday.InternshipAnswerTest" time="0.002" />
+    <testcase name="missingTrainingPlanDoesNotFallBackToUnrelatedTechnicalSources" classname="com.novatech.firstday.InternshipAnswerTest" time="0.002" />
+    <testcase name="technicalQuestionDuringInternshipKeepsItsOwnTopic" classname="com.novatech.firstday.InternshipAnswerTest" time="0.002" />
+    <testcase name="internshipOverviewUsesTrainingPlanInsteadOfServerRunbooks(String)[1]" classname="com.novatech.firstday.InternshipAnswerTest" time="0.005" />
+    <testcase name="internshipOverviewUsesTrainingPlanInsteadOfServerRunbooks(String)[2]" classname="com.novatech.firstday.InternshipAnswerTest" time="0.006" />
+    <testcase name="internshipOverviewUsesTrainingPlanInsteadOfServerRunbooks(String)[3]" classname="com.novatech.firstday.InternshipAnswerTest" time="0.005" />
+    <testcase name="internshipOverviewUsesTrainingPlanInsteadOfServerRunbooks(String)[4]" classname="com.novatech.firstday.InternshipAnswerTest" time="0.004" />
+    <testcase name="internshipOverviewUsesTrainingPlanInsteadOfServerRunbooks(String)[5]" classname="com.novatech.firstday.InternshipAnswerTest" time="0.002" />
+    <testcase name="internshipOverviewUsesTrainingPlanInsteadOfServerRunbooks(String)[6]" classname="com.novatech.firstday.InternshipAnswerTest" time="0.004" />
+  </testsuite>
+  <testsuite name="com.novatech.firstday.InternshipScopeTest" tests="15" failures="0" errors="0" skipped="0" time="3.345">
+    <testcase name="ownerFollowupStaysWithThePreviouslyDiscussedTrainingInstruction" classname="com.novatech.firstday.InternshipScopeTest" time="0.18" />
+    <testcase name="forbiddenGeneratedTextIsNeverStreamedToIntern" classname="com.novatech.firstday.InternshipScopeTest" time="0.051" />
+    <testcase name="forbiddenDocumentCannotBecomeARelatedResource" classname="com.novatech.firstday.InternshipScopeTest" time="0.009" />
+    <testcase name="conversationContextIsBounded" classname="com.novatech.firstday.InternshipScopeTest" time="0.008" />
+    <testcase name="projectDetailsAreBlockedBeforeAnyDatabaseOrModelCall" classname="com.novatech.firstday.InternshipScopeTest" time="0.003" />
+    <testcase name="internshipSearchAllowsOnlyNonProjectTrainingAndCompanySources(String, String, String, boolean)[1]" classname="com.novatech.firstday.InternshipScopeTest" time="0.056" />
+    <testcase name="internshipSearchAllowsOnlyNonProjectTrainingAndCompanySources(String, String, String, boolean)[2]" classname="com.novatech.firstday.InternshipScopeTest" time="0.004" />
+    <testcase name="internshipSearchAllowsOnlyNonProjectTrainingAndCompanySources(String, String, String, boolean)[3]" classname="com.novatech.firstday.InternshipScopeTest" time="0.003" />
+    <testcase name="internshipSearchAllowsOnlyNonProjectTrainingAndCompanySources(String, String, String, boolean)[4]" classname="com.novatech.firstday.InternshipScopeTest" time="0.003" />
+    <testcase name="internshipSearchAllowsOnlyNonProjectTrainingAndCompanySources(String, String, String, boolean)[5]" classname="com.novatech.firstday.InternshipScopeTest" time="0.004" />
+    <testcase name="internshipSearchAllowsOnlyNonProjectTrainingAndCompanySources(String, String, String, boolean)[6]" classname="com.novatech.firstday.InternshipScopeTest" time="0.002" />
+    <testcase name="internshipSearchAllowsOnlyNonProjectTrainingAndCompanySources(String, String, String, boolean)[7]" classname="com.novatech.firstday.InternshipScopeTest" time="0.002" />
+    <testcase name="internshipSearchAllowsOnlyNonProjectTrainingAndCompanySources(String, String, String, boolean)[8]" classname="com.novatech.firstday.InternshipScopeTest" time="0.003" />
+    <testcase name="priorProjectMessagesAreExcludedFromInternshipModelContext" classname="com.novatech.firstday.InternshipScopeTest" time="0.004" />
+    <testcase name="safeAnswerUsesPriorUserAndAssistantMessagesWithoutTreatingThemAsEvidence" classname="com.novatech.firstday.InternshipScopeTest" time="0.022" />
+  </testsuite>
+  <testsuite name="com.novatech.firstday.OllamaClientTest" tests="4" failures="0" errors="0" skipped="0" time="0.683">
+    <testcase name="providerErrorDoesNotExposePayload" classname="com.novatech.firstday.OllamaClientTest" time="0.591" />
+    <testcase name="incompleteGenerationFails" classname="com.novatech.firstday.OllamaClientTest" time="0.02" />
+    <testcase name="reads768DimensionalVector" classname="com.novatech.firstday.OllamaClientTest" time="0.038" />
+    <testcase name="streamsChunksAndRequiresDone" classname="com.novatech.firstday.OllamaClientTest" time="0.028" />
+  </testsuite>
+  <testsuite name="com.novatech.firstday.PersonalServiceTest" tests="8" failures="0" errors="0" skipped="0" time="0.072">
+    <testcase name="completedPlanDoesNotInventAnotherTask" classname="com.novatech.firstday.PersonalServiceTest" time="0.003" />
+    <testcase name="nextTaskSkipsFinishedTasksAndKeepsDescription" classname="com.novatech.firstday.PersonalServiceTest" time="0.004" />
+    <testcase name="remainingTasksExcludeCompletedTasks" classname="com.novatech.firstday.PersonalServiceTest" time="0.007" />
+    <testcase name="missingRequestIsNotInvented" classname="com.novatech.firstday.PersonalServiceTest" time="0.005" />
+    <testcase name="requestsForOneToolDoNotIncludeAnotherToolsStatus" classname="com.novatech.firstday.PersonalServiceTest" time="0.003" />
+    <testcase name="projectProgressUsesOnlyTheSelectedProjectPlan" classname="com.novatech.firstday.PersonalServiceTest" time="0.002" />
+    <testcase name="blockersIncludeOnlyRecordedBlockedTasks" classname="com.novatech.firstday.PersonalServiceTest" time="0.006" />
+    <testcase name="documentationQuestionDoesNotReadPersonalData" classname="com.novatech.firstday.PersonalServiceTest" time="0.001" />
+  </testsuite>
+  <testsuite name="com.novatech.firstday.ServiceIntegrationTest" tests="60" failures="0" errors="0" skipped="0" time="13.805">
+    <testcase name="answerRegression(String, JsonNode)[1]" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.055" />
+    <testcase name="answerRegression(String, JsonNode)[2]" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.019" />
+    <testcase name="answerRegression(String, JsonNode)[3]" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.017" />
+    <testcase name="answerRegression(String, JsonNode)[4]" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.021" />
+    <testcase name="answerRegression(String, JsonNode)[5]" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.023" />
+    <testcase name="answerRegression(String, JsonNode)[6]" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.019" />
+    <testcase name="answerRegression(String, JsonNode)[7]" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.023" />
+    <testcase name="answerRegression(String, JsonNode)[8]" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.023" />
+    <testcase name="answerRegression(String, JsonNode)[9]" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.022" />
+    <testcase name="answerRegression(String, JsonNode)[10]" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.02" />
+    <testcase name="answerRegression(String, JsonNode)[11]" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.019" />
+    <testcase name="answerRegression(String, JsonNode)[12]" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.019" />
+    <testcase name="answerRegression(String, JsonNode)[13]" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.017" />
+    <testcase name="answerRegression(String, JsonNode)[14]" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.018" />
+    <testcase name="answerRegression(String, JsonNode)[15]" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.017" />
+    <testcase name="answerRegression(String, JsonNode)[16]" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.017" />
+    <testcase name="answerRegression(String, JsonNode)[17]" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.03" />
+    <testcase name="answerRegression(String, JsonNode)[18]" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.016" />
+    <testcase name="answerRegression(String, JsonNode)[19]" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.016" />
+    <testcase name="answerRegression(String, JsonNode)[20]" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.017" />
+    <testcase name="answerRegression(String, JsonNode)[21]" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.016" />
+    <testcase name="answerRegression(String, JsonNode)[22]" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.019" />
+    <testcase name="answerRegression(String, JsonNode)[23]" classname="com.novatech.firstday.ServiceIntegrationTest" time="3.601" />
+    <testcase name="answerRegression(String, JsonNode)[24]" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.017" />
+    <testcase name="answerRegression(String, JsonNode)[25]" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.162" />
+    <testcase name="answerRegression(String, JsonNode)[26]" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.124" />
+    <testcase name="answerRegression(String, JsonNode)[27]" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.095" />
+    <testcase name="answerRegression(String, JsonNode)[28]" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.085" />
+    <testcase name="answerRegression(String, JsonNode)[29]" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.098" />
+    <testcase name="answerRegression(String, JsonNode)[30]" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.015" />
+    <testcase name="answerRegression(String, JsonNode)[31]" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.016" />
+    <testcase name="answerRegression(String, JsonNode)[32]" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.02" />
+    <testcase name="answerRegression(String, JsonNode)[33]" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.02" />
+    <testcase name="answerRegression(String, JsonNode)[34]" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.008" />
+    <testcase name="answerRegression(String, JsonNode)[35]" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.015" />
+    <testcase name="answerRegression(String, JsonNode)[36]" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.004" />
+    <testcase name="answerRegression(String, JsonNode)[37]" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.014" />
+    <testcase name="answerRegression(String, JsonNode)[38]" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.064" />
+    <testcase name="answerRegression(String, JsonNode)[39]" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.015" />
+    <testcase name="answerRegression(String, JsonNode)[40]" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.004" />
+    <testcase name="membershipRevocationPreservesProgressAndHistory" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.124" />
+    <testcase name="employeesCannotAssignOrEnumerateAdmin" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.101" />
+    <testcase name="internshipCannotOpenOldProjectChatButPreservesItsMessages" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.037" />
+    <testcase name="selectedProjectRetainsContextThroughQuotedOwnershipFollowup" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.116" />
+    <testcase name="actualStreamingPersistsCompletedExchange" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.053" />
+    <testcase name="realEmbeddingsRoundTripThroughPgvector" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.101" />
+    <testcase name="documentsAndPathsAreProtected" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.093" />
+    <testcase name="internshipRejectsProjectInformationAndSpoofedProjectScope" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.137" />
+    <testcase name="sourceRegression(String, JsonNode)[1]" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.02" />
+    <testcase name="sourceRegression(String, JsonNode)[2]" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.013" />
+    <testcase name="sourceRegression(String, JsonNode)[3]" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.011" />
+    <testcase name="sourceRegression(String, JsonNode)[4]" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.014" />
+    <testcase name="sourceRegression(String, JsonNode)[5]" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.01" />
+    <testcase name="sourceRegression(String, JsonNode)[6]" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.011" />
+    <testcase name="sourceRegression(String, JsonNode)[7]" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.013" />
+    <testcase name="sourceRegression(String, JsonNode)[8]" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.013" />
+    <testcase name="sourceRegression(String, JsonNode)[9]" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.01" />
+    <testcase name="privateDataAndRequestsRemainScoped" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.057" />
+    <testcase name="registrationAndExistingPasswordCompatibility" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.678" />
+    <testcase name="internshipHistorySurvivesReloadAndQuotedFollowupUsesPreviousTrainingTopic" classname="com.novatech.firstday.ServiceIntegrationTest" time="0.12" />
+  </testsuite>
+</testsuites>
