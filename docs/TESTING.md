@@ -46,6 +46,6 @@ Fast CI intentionally skips live integration tests. A green hosted CI run does n
 
 ## Reports
 
-Maven writes JUnit XML and text reports to backend/target/surefire-reports. They are generated build artifacts and are ignored by Git. The included GitHub Actions workflow uploads them as an artifact when the Java edition is published; it also type-checks and builds the frontend. This Java copy has not been pushed automatically.
+Maven writes JUnit XML and text reports to backend/target/surefire-reports. They are generated build artifacts and are ignored by Git. The GitHub Actions workflow uploads them as the java-test-results artifact and also type-checks and builds the frontend. See the published repository Actions tab for hosted runs.
 
 See VALIDATION.md for the recorded local run and its limitations.
